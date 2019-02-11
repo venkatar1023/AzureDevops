@@ -32,7 +32,7 @@ public class DispatchServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path = request.getRequestURI().substring(request.getContextPath().length());
-		
+		System.out.println("hi");
 		System.out.println(path);
 		request.setAttribute("myapp", myapp);
 		request.setAttribute("employees", hrApp.getEmployees());
